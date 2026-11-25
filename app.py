@@ -18,7 +18,7 @@ def get_colis(ref):
     if ref in COLIS:
         return jsonify(COLIS[ref]), 200
     else:
-        return jsonify({"error": "Colis not found"}), 404
+        return jsonify({"error": "Colis introuvable  dans le systeme"}), 404
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
